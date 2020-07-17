@@ -7,25 +7,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ShopPage {
-	WebDriver driver;
+public class ShopPage extends CommonPageClass {
+
 	public ShopPage(WebDriver driver) {
-		this.driver=driver;
+		super(driver);
 	}
 	
-	@FindBy(xpath="//span[text()='Electronics']")
-	WebElement electronics;
-	
+	@FindBy(xpath="//div[contains(@data-tracking-id,'Deals of the Day')]")
+	WebElement dealsOftheDay;
 
-	@FindBy(xpath="//a[@title='Apple']")
-	WebElement apple;
+	@FindBy(xpath="//a[@title='VIEW ALL']")
+	WebElement dealsViewAll;
 	
-	public void categorySelection() {
-		driver.navigate().refresh();
-		electronics.click();
-		WebDriverWait wait=new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='Apple']")));
-		apple.click();
+	public void dealsOftheDay() {
+		dealsOftheDay.isDisplayed();
+	//	dealsViewAll.click();
 		
 	}
+	
 }

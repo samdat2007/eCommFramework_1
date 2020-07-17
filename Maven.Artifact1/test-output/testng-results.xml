@@ -1,71 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5558" started-at="2020-07-16T22:04:59Z" finished-at="2020-07-16T22:05:04Z">
+  <suite name="Default suite" duration-ms="4816" started-at="2020-07-17T19:21:41Z" finished-at="2020-07-17T19:21:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5558" started-at="2020-07-16T22:04:59Z" finished-at="2020-07-16T22:05:04Z">
+    <test name="Default test" duration-ms="4816" started-at="2020-07-17T19:21:41Z" finished-at="2020-07-17T19:21:46Z">
       <class name="FlipkartTest.LoginActionTest">
-        <test-method status="PASS" signature="propertiesDeclare()[pri:0, instance:FlipkartTest.LoginActionTest@e3c0e40]" name="propertiesDeclare" is-config="true" duration-ms="23" started-at="2020-07-16T22:04:59Z" finished-at="2020-07-16T22:04:59Z">
+        <test-method status="PASS" signature="propertiesDeclare()[pri:0, instance:FlipkartTest.LoginActionTest@11d8ae8b]" name="propertiesDeclare" is-config="true" duration-ms="24" started-at="2020-07-17T19:21:41Z" finished-at="2020-07-17T19:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- propertiesDeclare -->
-        <test-method status="FAIL" signature="loginAndSelectCategory()[pri:0, instance:FlipkartTest.LoginActionTest@e3c0e40]" name="loginAndSelectCategory" duration-ms="5489" started-at="2020-07-16T22:04:59Z" finished-at="2020-07-16T22:05:04Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate an element using xpath=//span[text()='Electronics']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'DESKTOP-9I7GBEA', ip: '192.168.2.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()='Electronics']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'DESKTOP-9I7GBEA', ip: '192.168.2.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.click(Unknown Source)
-at FlipkartPageObjects.ShopPage.categorySelection(ShopPage.java:25)
-at FlipkartTest.LoginActionTest.loginAndSelectCategory(LoginActionTest.java:24)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="VerifyDealsOftheDay()[pri:0, instance:FlipkartTest.LoginActionTest@11d8ae8b]" name="VerifyDealsOftheDay" duration-ms="528" started-at="2020-07-17T19:21:41Z" finished-at="2020-07-17T19:21:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAndSelectCategory -->
+        </test-method> <!-- VerifyDealsOftheDay -->
+        <test-method status="PASS" signature="loginAndSelectiWatch()[pri:0, instance:FlipkartTest.LoginActionTest@11d8ae8b]" name="loginAndSelectiWatch" duration-ms="4207" started-at="2020-07-17T19:21:42Z" finished-at="2020-07-17T19:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndSelectiWatch -->
       </class> <!-- FlipkartTest.LoginActionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
